@@ -7,6 +7,7 @@ body {
   font-family: "Raleway";
   font-weight: 300;
   font-size: 14px;
+  color: #2d2d2d;
 }
 em {
   font-style: italic;
@@ -17,7 +18,7 @@ strong {
 }
 
 a:hover {
-  color: red;
+  color: #b64036;
 }
 
 a {
@@ -62,7 +63,7 @@ h2 {
   object-fit: contain;
 }
 .header-child a {
-  color: red;
+  color: #e2574c;
 }
 .header-child:nth-child(1) {
   margin-left: 1rem;
@@ -72,7 +73,7 @@ h2 {
 .header-child:nth-child(2) {
   font-size: 1rem;
   order: 3;
-  width: 80vw;
+  width: 90vw;
   height: 8vh;
   display: flex;
   flex-direction: row;
@@ -84,11 +85,14 @@ h2 {
   margin-right: 1rem;
   order: 2;
 }
-
+.border {
+  border-top: 0.25rem solid #d7d7d7;
+}
 .nav-bar-child {
   align-self: center;
   text-decoration: none;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .title {
@@ -129,7 +133,7 @@ h2 {
   display: flex;
   flex-direction: column;
   text-align: center;
-  line-height: 1.5rem;
+  line-height: 2rem;
   padding-top: 3rem;
   padding-bottom: 2rem;
 }
@@ -210,7 +214,6 @@ h2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../images/wave-bkgd.jpg");
   width: 100%;
-  /* height: auto; */
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -227,11 +230,11 @@ h2 {
   width: 100%;
   border-radius: 20px;
   padding: 4px 10px;
-  color: gray;
+  color: #969696;
 }
 
 .submit-button {
-  background: red;
+  background: #e2574c;
   color: white;
   padding: 2px 10px;
   position: absolute;
@@ -245,29 +248,39 @@ h2 {
   flex-direction: column;
   height: 30vh;
   justify-content: center;
-  background: black;
+  background: #242424;
   width: 100vw;
   color: white;
+  padding-top: 2rem;
 }
 
 .footer-info {
-  /* display: block; */
   flex-direction: column;
   line-height: 1.5;
   text-align: center;
   font-size: 1rem;
+  padding-bottom: 1rem;
 }
 .footer-info a {
   color: white;
   text-decoration: none;
 }
 
-.footer-info span {
+.footer-info:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.footer-info:nth-child(2) span {
+  text-decoration: underline;
+}
+
+.footer-info:nth-child(4) span {
   display: none;
 }
 
 .address {
-  color: gray;
+  color: #969696;
 }
 
 .icon-width {
