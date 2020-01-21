@@ -1,0 +1,670 @@
+/* global */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Raleway";
+  font-weight: 300;
+  font-size: 14px;
+}
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: 700;
+}
+
+a:hover {
+  color: red;
+}
+
+a {
+  color: black;
+}
+
+.span {
+  text-align: center;
+}
+
+/* banner */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display";
+}
+
+h1 {
+  font-size: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  padding: 2rem 0;
+}
+
+.header-parent {
+  display: flex;
+  width: auto;
+  height: 16vh;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header-child img {
+  width: auto;
+  height: 8vh;
+  object-fit: contain;
+}
+.header-child a {
+  color: red;
+}
+.header-child:nth-child(1) {
+  margin-left: 1rem;
+  order: 1;
+}
+
+.header-child:nth-child(2) {
+  font-size: 1rem;
+  order: 3;
+  width: 80vw;
+  height: 8vh;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+.header-child:nth-child(3) {
+  margin-right: 1rem;
+  order: 2;
+}
+
+.nav-bar-child {
+  align-self: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.title {
+  color: white;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.season {
+  display: block;
+  text-transform: none;
+  padding: 0 15vw;
+}
+
+.description {
+  font-size: 3.5rem;
+  color: white;
+  margin: 0 auto;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 50vh;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/banner-girl.png"), url("../images/flower-bkgd.jpg");
+  text-align: center;
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  background-position: bottom center;
+  background-size: cover, contain, cover;
+}
+
+.container-small {
+  width: 85vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 1.5rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.categories {
+  display: flex;
+  width: 100vw;
+  justify-content: right;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.category-large {
+  position: relative;
+  width: 100vw;
+  height: 25vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border: 0.3rem solid white;
+}
+
+.category {
+  position: relative;
+  width: 50vw;
+  height: 25vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border: 0.3rem solid white;
+}
+
+.category-large:nth-child(1) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/mens-category.jpg");
+}
+
+.category:nth-child(2) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/trends-category.jpg");
+}
+.category:nth-child(3) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/glasses-category.jpg");
+}
+.category:nth-child(4) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/sale-category.jpg");
+}
+.category:nth-child(5) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/bags-category.jpg");
+}
+
+.category-large:nth-child(6) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/womens-category.jpg");
+}
+
+.category-large p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.category p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  font-weight: 900;
+}
+.subscribe {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/wave-bkgd.jpg");
+  width: 100%;
+  /* height: auto; */
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: relative;
+  color: white;
+}
+.email-subscription {
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.email-subscription-input {
+  width: 100%;
+  border-radius: 20px;
+  padding: 4px 10px;
+  color: gray;
+}
+
+.submit-button {
+  background: red;
+  color: white;
+  padding: 2px 10px;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  border-radius: 20px;
+}
+
+.footer-parent {
+  display: flex;
+  flex-direction: column;
+  height: 30vh;
+  justify-content: center;
+  background: black;
+  width: 100vw;
+  color: white;
+}
+
+.footer-info {
+  /* display: block; */
+  flex-direction: column;
+  line-height: 1.5;
+  text-align: center;
+  font-size: 1rem;
+}
+.footer-info a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-info span {
+  display: none;
+}
+
+.address {
+  color: gray;
+}
+
+.icon-width {
+  width: 4vw;
+}
+
+/* Tablet Breakout */
+
+/* @media screen and (min-width: 600px) {
+  html,
+  body {
+    font-size: 16px;
+  }
+  .header-parent {
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .header-child {
+    height: 10vh;
+    object-fit: scale-down;
+  }
+  .header-child img {
+    width: 10vw;
+    height: 10vh;
+
+    object-fit: contain;
+  }
+  .header.child a {
+    color: black;
+  }
+  .header-child:nth-child(1) {
+    order: 1;
+  }
+
+  .header-child:nth-child(2) {
+    font-size: 1.5rem;
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    order: 2;
+  }
+  .header-child:nth-child(3) {
+    order: 3;
+  }
+  .nav-bar-child {
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .title {
+    font-size: 2rem;
+    color: white;
+    text-transform: uppercase;
+    margin: 0 auto;
+  }
+
+  .season {
+    display: block;
+    font-size: 3.5rem;
+    text-transform: none;
+  }
+
+  .description {
+    font-size: 3.5rem;
+    color: white;
+    margin: 0 auto;
+  }
+
+  .banner {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../images/banner-girl.png"), url("../images/flower-bkgd.jpg");
+    text-align: center;
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    background-position: top center;
+    background-size: cover, 20%, cover;
+  }
+
+  .container-large {
+
+    margin: 0 auto;
+    padding: 1.5rem 1.5rem;
+  }
+  .container-small {
+    width: 50vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  .container-small h2 {
+    font-size: 2.5rem;
+  }
+
+  .container-small p {
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+  .footer-parent {
+    display: flex;
+    height: 15vh;
+    justify-content: space-between;
+    background: black;
+    width: 100vw;
+    color: white;
+  }
+
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+  }
+  .footer-info a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .categories {
+    display: flex;
+    width: 100vw;
+    justify-content: right;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+  .category-large {
+    position: relative;
+    width: 50vw;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 0.3rem solid white;
+  }
+
+  .category {
+    position: relative;
+    width: 25vw;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 0.3rem solid white;
+  }
+
+  .category-large:nth-child(1) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../images/mens-category.jpg");
+  }
+
+  .category:nth-child(2) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../images/trends-category.jpg");
+  }
+  .category:nth-child(3) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../images/glasses-category.jpg");
+  }
+  .category:nth-child(4) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../images/sale-category.jpg");
+  }
+  .category:nth-child(5) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../images/bags-category.jpg");
+  }
+
+  .category-large:nth-child(6) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../images/womens-category.jpg");
+  }
+
+  .category-large p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    font-weight: 900;
+  }
+
+  .category p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 900;
+  }
+
+  .icon-width {
+    width: 2vw;
+  }
+}
+
+Desktop breakout 
+
+@media screen and (min-width: 1240px) {
+  .header-parent {
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .header-child {
+    height: 10vh;
+    object-fit: scale-down;
+  }
+  .header-child img {
+    width: 10vw;
+    height: 10vh;
+    object-fit: contain;
+  }
+  .header.child a {
+    color: black;
+  }
+  .header-child:nth-child(1) {
+    order: 1;
+  }
+
+  .header-child:nth-child(2) {
+    font-size: 1.5rem;
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    order: 2;
+  }
+  .header-child:nth-child(3) {
+    order: 3;
+  }
+  .nav-bar-child {
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .title {
+    font-size: 2rem;
+    color: white;
+    text-transform: uppercase;
+    margin: 0 auto;
+  }
+
+  .season {
+    display: block;
+    font-size: 3.5rem;
+    text-transform: none;
+  }
+
+  .description {
+    font-size: 3.5rem;
+    color: white;
+    margin: 0 auto;
+  }
+
+  .banner {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../images/banner-girl.png"), url("../images/flower-bkgd.jpg");
+    text-align: center;
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    background-position: top center;
+    background-size: cover, 20%, cover;
+  }
+
+  .container-large {
+    margin: 0 auto;
+    padding: 1.5rem 1.5rem;
+  }
+  .container-small {
+    width: 50vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  .container-small h2 {
+    font-size: 2.5rem;
+  }
+
+  .container-small p {
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+  .footer-parent {
+    display: flex;
+    height: 15vh;
+    justify-content: space-between;
+    background: black;
+    width: 100vw;
+    color: white;
+  }
+
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+  }
+  .footer-info a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .categories {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: right;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+  .category-large {
+    position: relative;
+    width: 50vw;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 0.3rem solid white;
+  }
+
+  .category {
+    position: relative;
+    width: 25vw;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 0.3rem solid white;
+  }
+
+  .category-large:nth-child(1) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../images/mens-category.jpg");
+  }
+
+  .category:nth-child(2) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../images/trends-category.jpg");
+  }
+  .category:nth-child(3) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../images/glasses-category.jpg");
+  }
+  .category:nth-child(4) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../images/sale-category.jpg");
+  }
+  .category:nth-child(5) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../images/bags-category.jpg");
+  }
+
+  .category-large:nth-child(6) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../images/womens-category.jpg");
+  }
+
+  .category-large p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    font-weight: 900;
+  }
+
+  .category p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 900;
+  }
+
+  .icon-width {
+    width: 2vw;
+  }
+} */
