@@ -16,13 +16,12 @@ em {
 strong {
   font-weight: 700;
 }
+a {
+  color: black;
+}
 
 a:hover {
   color: #b64036;
-}
-
-a {
-  color: black;
 }
 
 .span {
@@ -45,7 +44,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   padding: 2rem 0;
 }
 
@@ -105,12 +104,6 @@ h2 {
   display: block;
   text-transform: none;
   padding: 0 15vw;
-}
-
-.description {
-  font-size: 3.5rem;
-  color: white;
-  margin: 0 auto;
 }
 
 .banner {
@@ -191,24 +184,20 @@ h2 {
     url("../images/womens-category.jpg");
 }
 
-.category-large p {
+.category-large h2 {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 2rem;
-  font-weight: 900;
 }
 
-.category p {
+.category h2 {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 2rem;
-  font-weight: 900;
 }
 .subscribe {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
@@ -238,7 +227,7 @@ h2 {
   color: white;
   padding: 2px 10px;
   position: absolute;
-  top: 2px;
+  top: 6px;
   right: 2px;
   border-radius: 20px;
 }
@@ -246,7 +235,7 @@ h2 {
 .footer-parent {
   display: flex;
   flex-direction: column;
-  height: 30vh;
+  height: auto;
   justify-content: center;
   background: #242424;
   width: 100vw;
@@ -289,32 +278,24 @@ h2 {
 
 /* Tablet Breakout */
 
-/* @media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) {
   html,
   body {
     font-size: 16px;
   }
   .header-parent {
-    display: flex;
-    width: 100vw;
     height: 10vh;
     justify-content: space-around;
-    flex-wrap: wrap;
   }
 
   .header-child {
-    height: 10vh;
-    object-fit: scale-down;
+    height: 15vh;
   }
   .header-child img {
     width: 10vw;
     height: 10vh;
+  }
 
-    object-fit: contain;
-  }
-  .header.child a {
-    color: black;
-  }
   .header-child:nth-child(1) {
     order: 1;
   }
@@ -322,251 +303,64 @@ h2 {
   .header-child:nth-child(2) {
     font-size: 1.5rem;
     width: 60vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
     order: 2;
   }
+
   .header-child:nth-child(3) {
     order: 3;
   }
-  .nav-bar-child {
-    text-decoration: none;
-    text-transform: uppercase;
+
+  .border {
+    border: none;
   }
 
-  .title {
-    font-size: 2rem;
-    color: white;
-    text-transform: uppercase;
-    margin: 0 auto;
-  }
-
-  .season {
-    display: block;
-    font-size: 3.5rem;
-    text-transform: none;
-  }
-
-  .description {
-    font-size: 3.5rem;
-    color: white;
-    margin: 0 auto;
-  }
-
-  .banner {
-    display: flex;
-    flex-direction: column;
-    height: 70vh;
-    justify-content: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url("../images/banner-girl.png"), url("../images/flower-bkgd.jpg");
-    text-align: center;
-    background-repeat: no-repeat, no-repeat, repeat-x;
-    background-position: top center;
-    background-size: cover, 20%, cover;
-  }
-
-  .container-large {
-
-    margin: 0 auto;
-    padding: 1.5rem 1.5rem;
-  }
-  .container-small {
-    width: 50vw;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    padding: 2rem;
-  }
-  .container-small h2 {
-    font-size: 2.5rem;
-  }
-
-  .container-small p {
-    font-weight: 400;
-    font-size: 1.5rem;
-  }
-  .footer-parent {
-    display: flex;
-    height: 15vh;
-    justify-content: space-between;
-    background: black;
-    width: 100vw;
-    color: white;
-  }
-
-  .footer-info {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.5;
-  }
-  .footer-info a {
-    color: white;
-    text-decoration: none;
-  }
-
-  .categories {
-    display: flex;
-    width: 100vw;
-    justify-content: right;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: space-between;
-  }
   .category-large {
-    position: relative;
     width: 50vw;
-    height: 50vh;
-    background-repeat: no-repeat;
-    background-size: contain;
-    border: 0.3rem solid white;
+    height: 25vh;
   }
 
   .category {
-    position: relative;
     width: 25vw;
-    height: 50vh;
-    background-repeat: no-repeat;
-    background-size: contain;
-    border: 0.3rem solid white;
+    height: 25vh;
   }
 
-  .category-large:nth-child(1) {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url("../images/mens-category.jpg");
+  .footer-parent {
+    align-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 30vh;
   }
 
-  .category:nth-child(2) {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url("../images/trends-category.jpg");
-  }
-  .category:nth-child(3) {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url("../images/glasses-category.jpg");
-  }
-  .category:nth-child(4) {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url("../images/sale-category.jpg");
-  }
-  .category:nth-child(5) {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url("../images/bags-category.jpg");
+  .footer-info:nth-child(4) span {
+    display: contents;
   }
 
-  .category-large:nth-child(6) {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url("../images/womens-category.jpg");
+  .footer-info:nth-child(4) {
+    width: 25vw;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    line-height: 1.5;
   }
-
-  .category-large p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 3rem;
-    font-weight: 900;
+  .footer-info:nth-child(2) {
+    justify-content: left;
   }
-
-  .category p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 3.5rem;
-    font-weight: 900;
-  }
-
-  .icon-width {
-    width: 2vw;
+  .footer-info {
+    width: 50vw;
+    text-align: left;
+    padding-left: 3rem;
   }
 }
 
-Desktop breakout 
-
+/* Desktop breakout  */
 @media screen and (min-width: 1240px) {
-  .header-parent {
-    display: flex;
-    width: 100vw;
-    height: 10vh;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-
-  .header-child {
-    height: 10vh;
-    object-fit: scale-down;
-  }
-  .header-child img {
-    width: 10vw;
-    height: 10vh;
-    object-fit: contain;
-  }
-  .header.child a {
-    color: black;
-  }
-  .header-child:nth-child(1) {
-    order: 1;
-  }
-
-  .header-child:nth-child(2) {
-    font-size: 1.5rem;
-    width: 60vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    order: 2;
-  }
-  .header-child:nth-child(3) {
-    order: 3;
-  }
-  .nav-bar-child {
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-
-  .title {
-    font-size: 2rem;
-    color: white;
-    text-transform: uppercase;
-    margin: 0 auto;
-  }
-
-  .season {
-    display: block;
-    font-size: 3.5rem;
-    text-transform: none;
-  }
-
-  .description {
-    font-size: 3.5rem;
-    color: white;
-    margin: 0 auto;
-  }
-
   .banner {
-    display: flex;
-    flex-direction: column;
     height: 70vh;
-    justify-content: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url("../images/banner-girl.png"), url("../images/flower-bkgd.jpg");
-    text-align: center;
-    background-repeat: no-repeat, no-repeat, repeat-x;
     background-position: top center;
     background-size: cover, 20%, cover;
   }
 
-  .container-large {
-    margin: 0 auto;
-    padding: 1.5rem 1.5rem;
-  }
   .container-small {
     width: 50vw;
     margin: 0 auto;
@@ -576,108 +370,18 @@ Desktop breakout
     justify-content: center;
     padding: 2rem;
   }
-  .container-small h2 {
-    font-size: 2.5rem;
-  }
-
-  .container-small p {
-    font-weight: 400;
-    font-size: 1.5rem;
-  }
-  .footer-parent {
-    display: flex;
-    height: 15vh;
-    justify-content: space-between;
-    background: black;
-    width: 100vw;
-    color: white;
-  }
-
-  .footer-info {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.5;
-  }
-  .footer-info a {
-    color: white;
-    text-decoration: none;
-  }
 
   .categories {
-    display: flex;
     height: 100vh;
     width: 100vw;
-    justify-content: right;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: space-between;
   }
   .category-large {
-    position: relative;
     width: 50vw;
     height: 50vh;
-    background-repeat: no-repeat;
-    background-size: contain;
-    border: 0.3rem solid white;
   }
 
   .category {
-    position: relative;
     width: 25vw;
     height: 50vh;
-    background-repeat: no-repeat;
-    background-size: contain;
-    border: 0.3rem solid white;
   }
-
-  .category-large:nth-child(1) {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url("../images/mens-category.jpg");
-  }
-
-  .category:nth-child(2) {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url("../images/trends-category.jpg");
-  }
-  .category:nth-child(3) {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url("../images/glasses-category.jpg");
-  }
-  .category:nth-child(4) {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url("../images/sale-category.jpg");
-  }
-  .category:nth-child(5) {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url("../images/bags-category.jpg");
-  }
-
-  .category-large:nth-child(6) {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url("../images/womens-category.jpg");
-  }
-
-  .category-large p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 3rem;
-    font-weight: 900;
-  }
-
-  .category p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 3.5rem;
-    font-weight: 900;
-  }
-
-  .icon-width {
-    width: 2vw;
-  }
-} */
+}
