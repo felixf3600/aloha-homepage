@@ -12,6 +12,9 @@ body {
 em {
   font-style: italic;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 strong {
   font-weight: 700;
@@ -275,6 +278,10 @@ h2 {
 .icon-width {
   width: 4vw;
 }
+.carousel-cell {
+  width: 100%;
+  text-align: center;
+}
 
 /* Tablet Breakout */
 
@@ -351,6 +358,9 @@ h2 {
     text-align: left;
     padding-left: 3rem;
   }
+  .carousel-cell {
+    width: 50%;
+  }
 }
 
 /* Desktop breakout  */
@@ -383,5 +393,8 @@ h2 {
   .category {
     width: 25vw;
     height: 50vh;
+  }
+  .carousel-cell {
+    width: 25%;
   }
 }

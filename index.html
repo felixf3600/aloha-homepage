@@ -13,7 +13,14 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./CSS/fonts.css" />
+
+    <!-- flickety css -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="./CSS/style.css" />
+   
+   <!-- flickety js -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="./JS/script.js"></script>
   </head>
   <body>
     <header class="header-parent">
@@ -65,94 +72,58 @@
     <article class="container-small">
       <h2><em>Most-Loved </em> <strong>Products</strong></h2>
     </article>
-    <section class="products">
-      <ul>
-        <li>
-          <div class="item">
-            <img
-              src="./images/blue-hipster-backpack.jpg"
-              alt="blue-hipster-backpack"
-            />
-            <h1>BAGS</h1>
-            <h2>Hipster Backpack</h2>
-            <h3>$69.00</h3>
-          </div>
-        </li>
-        <li>
-          <div class="item">
-            <img
-              src="./images/blue-silk-dress.jpg"
-              alt="blue-hipster-backpack"
-            />
-            <h1>DRESSES</h1>
-            <h2>Blue Silk Dress</h2>
-            <h3>price</h3>
-          </div>
-        </li>
-        <li>
-          <div class="item">
-            <img
-              src="./images/checked-stretch-dress.jpg"
-              alt="checked-stretch-dress"
-            />
-            <h1>DRESSES</h1>
-            <h2>Checked Stretch Dress</h2>
-            <h3>$129.00</h3>
-          </div>
-        </li>
-        <li>
-          <div class="item">
-            <img src="./images/cotton-blue-shirt.jpg" alt="cotton-blue-shirt" />
-            <h1>SHIRTS</h1>
-            <h2>Cotton Blue Shirt</h2>
-            <h3>$89.00</h3>
-          </div>
-        </li>
+    <div class="main-carousel">
+      <div class="carousel-cell">
+        <img src="./images/blue-hipster-backpack.jpg" alt="blue-hipster-backpack"/>
+        <p>BAGS</p>
+        <h3>Hipster Backpack</h3>
+        <p>$69.00</p>
+      </div>
+      <div class="carousel-cell">
+        <img src="./images/blue-silk-dress.jpg" alt="blue-hipster-backpack"/> 
+        <p>DRESSES</p>
+        <h3>Blue Silk Dress</h3>
+        <p>price</p>
+      </div>
+      <div class="carousel-cell">         
+        <img src="./images/checked-stretch-dress.jpg" alt="checked-stretch-dress"/>
+        <p>DRESSES</p>
+        <h3>Checked Stretch Dress</h3>
+        <p>$129.00</p>
+      </div>
+      <div class="carousel-cell">
+        <img src="./images/cotton-blue-shirt.jpg" alt="cotton-blue-shirt"/>
+        <p>SHIRTS</p>
+        <h3>Cotton Blue Shirt</h3>
+        <p>$89.00</p>
+      </div>
+      <div class="carousel-cell">
+        <img src="./images/cotton-yellow-tshirt.jpg" alt="cotton-yellow-tshirt"/>
+        <p>SHIRTS</p>
+        <h3>Cotton Yellow Shirt</h3>
+        <p>price</p>
+      </div>
+      <div class="carousel-cell">
+        <img src="./images/demin-overall-shorts.jpg" alt="demin-overall-shorts"/>
+        <p>SHORTS</p>
+        <h3>Denim Overall Shorts</h3>
+        <p>price</p>
+      </div>
+      <div class="carousel-cell">
+        <img src="./images/pink-dotted-dress.jpg" alt="pink-dotted-dress"/>
+        <p>DRESSES</p>
+        <h3>Pink Dotted Dress</h3>
+        <p>price</p>
+      </div>
+      <div class="carousel-cell">
+        <img src="./images/stretch-knit-dress.jpg"  alt="stretch-knit-dress"/>
+        <p>DRESSES</p>
+        <h3>Stretch Knit Dress</h3>
+        <p>$169.00</p>
+      </div> 
+    </div>
 
-        <li>
-          <div class="item">
-            <img
-              src="./images/cotton-yellow-tshirt.jpg"
-              alt="cotton-yellow-tshirt"
-            />
-            <h1>SHIRTS</h1>
-            <h2>Cotton Yellow Shirt</h2>
-            <h3>price</h3>
-          </div>
-        </li>
-        <li>
-          <div class="item">
-            <img
-              src="./images/demin-overall-shorts.jpg"
-              alt="demin-overall-shorts"
-            />
-            <h1>SHORTS</h1>
-            <h2>Denim Overall Shorts</h2>
-            <h3>price</h3>
-          </div>
-        </li>
-        <li>
-          <div class="item">
-            <img src="./images/pink-dotted-dress.jpg" alt="pink-dotted-dress" />
-            <h1>DRESSES</h1>
-            <h2>Pink Dotted Dress</h2>
-            <h3>price</h3>
-          </div>
-        </li>
-        <li>
-          <div class="item">
-            <img
-              src="./images/stretch-knit-dress.jpg"
-              alt="stretch-knit-dress"
-            />
-            <h1>DRESSES</h1>
-            <h2>Stretch Knit Dress</h2>
-            <h3>$169.00</h3>
-          </div>
-        </li>
-      </ul>
-    </section>
-    <section class="subscribe">
+<section class="subscribe">
       <div class="container-small">
         <h2><em>Sign-Up for </em> <strong>Updates</strong></h2>
         <p>
