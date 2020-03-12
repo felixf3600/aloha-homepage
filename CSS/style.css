@@ -2,6 +2,9 @@
 * {
   box-sizing: border-box;
 }
+#main[tabindex="-1"]:focus {
+  outline: 0;
+}
 html,
 body {
   min-width: 600px;
@@ -9,6 +12,22 @@ body {
   font-weight: light;
   font-size: 14px;
   color: #2d2d2d;
+}
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+.screen-reader-text:focus {
+  clip: auto !important;
+  display: block;
+  height: auto;
+  left: 5px;
+  top: 5px;
+  width: auto;
+  z-index: 100000; /* above all content */
 }
 em {
   font-style: italic;
@@ -403,14 +422,14 @@ a:hover {
 
   .category-large {
     min-width: 50vw;
-    height: 235px;
+    height: 25vw;
   }
   .container-small {
     width: 75vw;
   }
   .category {
     min-width: 25vw;
-    height: 235px;
+    height: 25vw;
   }
   .category-large:nth-child(1) {
     border-top: 0.4rem solid white;
@@ -455,7 +474,7 @@ a:hover {
   }
 
   .subscribe {
-    height: 70vh;
+    height: 800px;
     min-width: 100vw;
   }
 

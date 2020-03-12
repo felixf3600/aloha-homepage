@@ -25,16 +25,22 @@
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="./JS/script.js"></script>
   </head>
+  <a class="screen-reader-text" href="#main">Skip to content</a>
+
   <body>
+    <main id="main" class="site-main" tabindex="-1"></main>
     <header class="header-parent">
       <div class="header-child">
+        <h1 class="screen-reader-text">Aloha Apparel Company Site</h1>
         <img src="./images/aloha-logo.svg" alt="aloha-logo" />
       </div>
       <nav class="header-child border">
-        <a href="#about" class="nav-bar-child">About</a>
-        <a href="#shop" class="nav-bar-child">Shop</a>
-        <a href="#featured" class="nav-bar-child">Featured</a>
-        <a href="#update" class="nav-bar-child">Updates</a>
+        <a href="#about" class="nav-bar-child screen-reader-text">About</a>
+        <a href="#shop" class="nav-bar-child screen-reader-text">Shop</a>
+        <a href="#featured" class="nav-bar-child screen-reader-text"
+          >Featured</a
+        >
+        <a href="#update" class="nav-bar-child screen-reader-text">Updates</a>
       </nav>
       <div class="header-child">
         <img src="./images/cart-icon.svg" alt="cart-icon" />
@@ -79,7 +85,7 @@
       </div>
     </div>
     <article class="container-carousel">
-      <div id="featured" class="main-carousel">
+      <div id="featured" class="main-carousel ">
         <div class="carousel-cell">
           <img
             src="./images/blue-hipster-backpack.jpg"
@@ -142,7 +148,7 @@
         </div>
       </div>
     </article>
-    <section id="update" class="subscribe">
+    <section id="update" class="subscribe ">
       <div class="container-small">
         <div class="subscribe-info">
           <h2><em>Sign-Up for </em> <strong>Updates</strong></h2>
@@ -153,19 +159,16 @@
           </p>
         </div>
         <form class="email-subscription" action="email.php" method="post">
-          <div class="email-subscriptiont">
-            <input
-              class="email-subscription-input"
-              name="Your Email"
-              type="email"
-              id="email-submission"
-              placeholder="Your email"
-              required
-            />
-            <button class="submit-button" id="submit-button">
-              Submit
-            </button>
-          </div>
+          <input
+            class="email-subscription-input"
+            name="email"
+            type="email"
+            id="email-submission"
+            placeholder="Your email"
+          />
+          <button id="submit-button" class="submit-button">
+            Submit
+          </button>
         </form>
       </div>
     </section>

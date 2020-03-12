@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", function() {
   //code goes below
   //Flickety below
 
-  const clickSubmit = document.getElementsByTagName("form")[0];
+  const clickSubmit = document.getElementById("submit-button");
+  const submitInput = document.getElementById("email-submission");
   const elem = document.querySelector(".main-carousel");
   const flkty = new Flickity(elem, {
     // options
@@ -11,9 +12,11 @@ document.addEventListener("DOMContentLoaded", function() {
     contain: true
   });
   //email validation
-  clickSubmit.addEventListener("submit", function(event) {
-    alert("Thanks for Subscribing!");
+  clickSubmit.addEventListener("click", function(event) {
     event.preventDefault();
+    if (submitInput.value != "")
+      alert("Thanks for Subscribing with " + submitInput.value + " !");
+    else alert("This cant be blank");
   });
 
   // check input using if statement alert if input is empty
